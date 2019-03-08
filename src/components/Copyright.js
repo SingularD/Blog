@@ -10,7 +10,7 @@ const Copyright = ({ blogInfo }) => {
         <LogoGithub className="ml-5 mr-3 hover-grey col-1" fontSize="50px" color="grey"/>
         <LogoTwitter className="hover-grey col-1" fontSize="50px" color="grey"/>
       </div>
-      <div className="mt-3">
+      <div className="mt-3 text-center">
         <p>Copyright © { blogInfo.blogName }'s Blog 2019
           <br/>
           Theme by { blogInfo.author } |

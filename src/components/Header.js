@@ -1,19 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 const Header = ({ name, description, where, passageInfo }) => {
   return(
     <div className="header">
-      <div className="title row justify-content-between">
+      <div className="title row justify-content-between ml-5">
         <div className="blog-name col-3 mt-3">
-          <a className="alert-link" href="#">{name}'s Blog</a>
+          <Link className="alert-link header-a" to="/">{name}'s Blog</Link>
         </div>
         <div className="title-options col-3 row mt-3">
           <div className="col-4">
-            <a className="alert-link" href="#">文章</a>
+            <Link className="alert-link header-a" to="/">文章</Link>
           </div>
           <div className="col-4">
-            <a className="alert-link" href="#">归档</a>
+            <Link className="alert-link header-a" to="/">归档</Link>
           </div>
         </div>
       </div>

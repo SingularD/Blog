@@ -5,7 +5,7 @@ import LogoTwitter from 'react-ionicons/lib/LogoTwitter'
 
 const Tags =  ({ tags, categories }) => {
   return (
-    <ul className="list-group list-group-flush d-flex tags mt-5 w-25">
+    <ul className="list-group list-group-flush d-flex tags mt-5">
       <li className="list-group-item border-bottom border-top">
         <div>
           {tags.map((tag) => (
@@ -18,8 +18,13 @@ const Tags =  ({ tags, categories }) => {
         </div>
       </li>
       <li className="list-group-item border-bottom">
-        <p>categories:</p>
-        <ul className="list-group">
+        <button data-toggle="collapse"
+           className="btn badge-secondary"
+           href="#show-category"
+           aria-expanded="false"
+           aria-controls="show-category"
+        >categories</button>
+        <ul className="list-group mt-2" id="show-category">
           {
             categories.map(( category ) => (
               <li className="list-group-item border-0" key={category}>

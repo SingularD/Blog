@@ -9,18 +9,25 @@
   font-size: 20px;
   background-size: 100%;
 }
-.header a{
+.header-a{
   color: white;
+}
+.passageList-a{
+  color: dimgrey;
 }
 .description{
   position:relative;
   top:40%;
   transform:translateY(-40%);
+  text-align: center;
 }
 
 .description h1{
   font-size: 70px;
   color: white;
+}
+.passage-title{
+  color: black;
 }
 .description p{
   font-size: 30px;
@@ -38,8 +45,16 @@
 .passage h1{
   font-size: 50px;
   text-align: left;
+  color: black;
 }
 .passage p {
   text-align: left;
   font-size: 20px;
+}
+.comment{
+  clear: both;
+  margin-left: 20%;
+}
+.comment-list{
+  clear: both;
 }
