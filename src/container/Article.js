@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../components/Header'
-// import PassageList from './components/PassageList'
 import Tags from '../components/Tags'
 import CopyRight from '../components/Copyright'
 import Passage from '../components/Passage'
@@ -12,6 +11,9 @@ import {blogInfo, categories, passageInfo, tags, where, commentList} from "../Te
 class Article extends React.Component{
   constructor(props) {
     super(props)
+  }
+  componentDidMount() {
+    alert(this.props.match.params.title)
   }
   render(){
     return(

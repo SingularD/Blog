@@ -16,7 +16,7 @@ const PassageList = ({ items }) => {
           >
             <div>
               <h3 className="passage-title">
-                <Link to='/Article' className="alert-link passageList-a">
+                <Link to={ '/article/' + item.title } className="alert-link passageList-a">
                   { item.title }
                    </Link>
               </h3>
